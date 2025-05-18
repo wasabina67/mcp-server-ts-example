@@ -1,0 +1,12 @@
+{
+    "inputs": [],
+    "servers": {
+        "mcp-server-ts-example": {
+            "type": "stdio",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/dist/main.js"
+            ]
+        }
+    }
+}
