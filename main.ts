@@ -7,7 +7,9 @@ const server = new McpServer({
   version: "1.0.0",
 })
 
-server.tool("add",
+server.tool(
+  "add",
+  "Adds two integers and returns the result.",
   { a: z.number(), b: z.number() },
   async ({ a, b }) => ({
     content: [{ type: "text", text: String(a + b) }]
